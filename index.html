@@ -111,7 +111,7 @@
         <p>— Audrey Hepburn</p>
       </div>
       <h1>Urban Gardens</h1>
-      <button type="button" class="btn btn-success explore-button">
+      <button type="button" class="btn btn-success explore-button" id="explore-button">
         Explore
       </button>
     </header>
@@ -233,10 +233,16 @@
         >open-source</a
       >.
       <br />
-      Source: <a href="https://ecolife.com/dictionary/urban-gardening/">Ecolife</a>
+      Source: <a href="https://ecolife.com/dictionary/urban-gardening/">Ecolife</a> & <a href="https://www.urbanvine.co/blog/urban-farming">Urban Vine</a>
       <br />
       Original picture of the rooftop garden can be found <a href="https://unsplash.com/photos/top-view-of-building-with-trees-IfmqOuOkaOA">here</a>. Illustrations come from <a href="https://www.manypixels.co/gallery">ManyPixels</a>.
     </footer>
   </body>
 </div>
+<script>
+  let exploreButton = document.querySelector("#explore-button");
+  exploreButton.addEventListener("click", function()
+  {alert("Did you know that...? If all of the spare land in New York City was used for the urban farming, fresh products could be provided to over 150,000 people! Let's dive deep into the urban gardens 😊")
+  });
+</script>
 </html>
