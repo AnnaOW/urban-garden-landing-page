@@ -173,15 +173,21 @@
     .container .card-container {
       display: grid;
       grid-template-columns: 1fr;
+      justify-items: center;
       max-width: 270px;
+      margin: 0 auto;
+      padding: 0;
   }
+    .container .card {
+      margin: 0;
+      max-height: 190px;
+    }
     .container .card h4 {
       font-size: 12px;
       text-align: center;
 }
     .container .card p {
-      font-size: 12px; 
-      text-align: center; 
+      display: none;
     }
     .container h2 {
       font-size: 25px;
