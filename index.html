@@ -113,12 +113,12 @@
       max-width: 500px;
       overflow-x: scroll;
       scroll-snap-type: x mandatory;
+      scroll-snap-align: start;
 }
     .container .cards-gallery .gallery-card {
       display: flex;
-      transition: all 0.2s;
-      cursor: pointer;
-      scroll-snap-align: start;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;      
 }
     .container .cards-gallery .gallery-card .gallery-card-city-view {
       border-radius: 4px;
@@ -192,6 +192,16 @@
     }
     .container p, ul li {
       font-size: 12px;
+}
+    .container small {
+      font-size: 10px; 
+}
+    .container .cards-gallery {  
+      margin-top: 8px;
+      max-width: 260px;
+}
+    .container .cards-gallery .gallery-card .gallery-card-city-view {
+      height: 200px;
 }
     .container iframe {
       width: 280px;
