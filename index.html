@@ -102,7 +102,27 @@
       line-height: 1.5;
 }
     .container small {
-      font-size: 14px;
+      font-size: 16px;
+}
+    .container .cards-gallery {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      padding: 1rem;
+      margin-top: 10px;
+      max-width: 500px;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+}
+    .container .cards-gallery .gallery-card {
+      display: flex;
+      transition: all 0.2s;
+      cursor: pointer;
+      scroll-snap-align: start;
+}
+    .container .cards-gallery .gallery-card .gallery-card-city-view {
+      border-radius: 4px;
+      height: 360px;
 }
     .container iframe {
       width: 560px;
@@ -141,7 +161,7 @@
     .container section {
       padding: 10px;
 }
-    .container .urban-gardens-container {
+    .container .urban-gardens-container, .urban-gardens-container-users-instructions {
       display: none;
 }
     .container .garden-benefit-illustration {
@@ -208,7 +228,7 @@
             <li><strong><em>Green roofs</em></strong>: roofs designed for the aim of cultivating plants.</li>
             </ul>
             </p> 
-            <small>Let's make our lives green again! 😉 👇</small>   
+            <small class="urban-gardens-container-users-instructions">Let's make our lives green again! 😉 👇</small>   
             <div class="urban-gardens-container">
               <div class="row">
                 <div class="col">
@@ -287,21 +307,21 @@
       </section>
       <section>
         <h2>Examples of urban gardens around the world</h2>
-        <h4>Choose the picture, click & discover 🗺️</h4>
+        <h4>Scroll, click & discover 🗺️</h4>
         <p>Read more about the most successful initiatives in Melbourne, Shanghai, Medellin & Accra</p>
         <small><em>Disclaimer: Pictures represent the cities, not the garden initiatives.</em></small> 
-        <div class="cards-gallery">
-          <div class="card">
-            <a href="https://www.melbourne.vic.gov.au/residents/home-neighbourhood/gardens-and-green-spaces/Pages/gardens-green-spaces.aspx" target="_blank" title="Green spaces in Melbourne webiste"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/829/original/alexis-01fDADro0PU-unsplash.jpg?1709751864" alt="Body of water between high rising buildings"></a>  
+        <div class="container cards-gallery">
+          <div class="gallery-card">
+            <a href="https://www.melbourne.vic.gov.au/residents/home-neighbourhood/gardens-and-green-spaces/Pages/gardens-green-spaces.aspx" target="_blank" title="Green spaces in Melbourne"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/829/original/alexis-01fDADro0PU-unsplash.jpg?1709751864" alt="Body of water between high rising buildings" class="gallery-card-city-view"></a>  
           </div>
-          <div class="card">
-            <a href="https://wwf.panda.org/wwf_news/?204455/Shanghai-urban-farming" target="_blank" title="Urban farming in Shanghai website"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/827/original/road-trip-with-raj-py8eyAh9J3A-unsplash.jpg?1709751446" alt="Aerial view of Shanghai skyscrapers"></a>  
+          <div class="gallery-card">
+            <a href="https://wwf.panda.org/wwf_news/?204455/Shanghai-urban-farming" target="_blank" title="Urban farming in Shanghai"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/827/original/road-trip-with-raj-py8eyAh9J3A-unsplash.jpg?1709751446" alt="Aerial view of Shanghai skyscrapers" class="gallery-card-city-view"></a>  
           </div>
-          <div class="card">
-            <a href="https://acimedellin.org/urban-and-rural-kitchen-gardens-are-an-alternative-in-medellin-to-increase-food-security/?lang=en" target="_blank" title="Urban garden in Medellin website"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/828/original/juan-saravia-03gVOLHq9ec-unsplash.jpg?1709751625" alt="Medellin panorama at night"></a>
+          <div class="gallery-card">
+            <a href="https://acimedellin.org/urban-and-rural-kitchen-gardens-are-an-alternative-in-medellin-to-increase-food-security/?lang=en" target="_blank" title="Urban garden in Medellin"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/828/original/juan-saravia-03gVOLHq9ec-unsplash.jpg?1709751625" alt="Medellin panorama at night" class="gallery-card-city-view"></a>
           </div>
-          <div class="card">
-            <a href="https://nextcity.org/informalcity/entry/even-through-accras-development-boom-urban-farms-crop-up-everywhere" target="_blank" title="Urban frams in Accra webiste"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/831/original/kojo-nana-GtnFtsPXKME-unsplash.jpg?1709752260" alt="National Theatre in Accra"></a>
+          <div class="gallery-card">
+            <a href="https://nextcity.org/informalcity/entry/even-through-accras-development-boom-urban-farms-crop-up-everywhere" target="_blank" title="Urban frams in Accra"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/831/original/kojo-nana-GtnFtsPXKME-unsplash.jpg?1709752260" alt="National Theatre in Accra" class="gallery-card-city-view"></a>
           </div>
         </div>
       </section>
